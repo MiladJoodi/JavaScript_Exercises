@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SabzLearn | Js | 110</title>
+</head>
+
+<body> 
+
+    <div class="login-page">
+        <div class="form">
+                <input type="text" placeholder="username" class="username"  onkeypress="usernameValid()">
+                <p id="usernameStatus"></p>
+                <input type="password" placeholder="password" class="password"  onkeypress="password()"/>
+                <p id="passwordStatus"></p>
+                <button onclick="dataValidation()">login</button>
+                <p class="message">Not registered? <a>Create an account</a></p>
+        </div>
+    </div>
+
+    <div class="modal">
+        لطفا اطلاعات لازم را به درستی وارد کنید
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
