@@ -1,0 +1,89 @@
+body {
+    background: #ee0058;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    width: 300px;
+}
+
+.form .form-element {
+    position: relative;
+}
+
+.form .form-element input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #888;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    text-indent: 10px;
+}
+
+.form .form-element .toggle-password {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 3px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form .form-element .toggle-password.active i.fa-eye {
+    display: none;
+}
+
+.form .form-element .toggle-password.active i.fa-eye-slash {
+    display: inline;
+}
+
+.form .form-element .toggle-password i.fa-eye-slash {
+    display: none;
+}
+
+.form .form-element .password-policies {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 300ms ease-in-out, opacity 300ms ease-in-out,
+}
+
+.form .form-element .password-policies.active {
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+
+.form .form-element .password-policies>div {
+    margin: 15px 10px;
+    font-weight: 600;
+    color: #888;
+}
+
+.form .form-element .password-policies>div.active {
+    color: #111;
+}
