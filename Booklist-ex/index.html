@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/flatly/bootstrap.min.css"
+    />
+    <title>My BookList App</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-warning"></i> <span
+          class="text-warning"
+        >
+          Book</span
+        >List
+      </h1>
+      <form id="book-form" autocomplete="off">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="text" id="year" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add Book"
+          class="btn btn-warning btn-block"
+        />
+      </form>
+      <table class="table table-striped mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+          <!-- <tr>
+            <th>اثر مرکب</th>
+            <th>علی محمدی</th>
+            <th>2010</th>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
