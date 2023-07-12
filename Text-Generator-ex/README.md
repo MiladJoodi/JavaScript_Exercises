@@ -1,4 +1,4 @@
-## Text Generator like lorem epsom
+## Text Generator like lorem ipsum
 
 
 ### Cover:
