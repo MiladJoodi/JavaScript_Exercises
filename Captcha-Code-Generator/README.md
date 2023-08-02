@@ -1,8 +1,8 @@
 ## Captcha Code Generator
-     Options ?:
-	? sensitive to Empty input
-	? sensitive to string input
-	? control range of 1~6  digit number
+     Options :
+	 sensitive to Empty input
+	 sensitive to string input
+	 control range of 1~6  digit number
 
 
 
