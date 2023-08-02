@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgb(176, 252, 205); */
+    font-family: "Poppins";
+    background-color: rgb(184, 105, 164);
+
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    /* background-color: rgb(212, 204, 127); */
+    background-color: rgb(235, 173, 232);
+    max-width: 600px;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.box .title {
+    font-weight: 600;
+    text-shadow: 0 0 2px #000000;
+    transition: text-shadow 0.3s ease;
+}
+.box .title:hover {
+    text-shadow: 0 0 4px #000000;
+}
+.checkInfo {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.checkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label {
+    font-size: 18px;
+    /* text-align: center; */
+}
+.input {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family: "Poppins";
+    padding: 0 15px;
+}
+.input::placeholder {
+    color: rgba(126, 126, 126, 0.712);
+}
+
+.btn {
+    color: #fff;
+    align-self: flex-end;
+    font-size: 18px;
+    font-family: "Poppins";
+    background: linear-gradient(61deg, #003DE6 0, #C4108E 95%); width: 130px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+}
+.btn:hover {
+    background: linear-gradient(61deg, #003DE6 0, #C4108E 70%); width: 130px;
+}
+.footer {
+    width: 100%;
+    margin-top: 50px;
+}
+.footerText {
+    font-size: 12px;
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+}
+.footerText:hover {
+    transform: scale(1.1);
+    /* font-size: 24px; */
+    opacity: 1;
+}
+.love {
+    color: red;
+}
+.checkResult {
+    margin-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    transition: color 0.5s ease;
+    color: rgb(235, 173, 232);
+
+}
